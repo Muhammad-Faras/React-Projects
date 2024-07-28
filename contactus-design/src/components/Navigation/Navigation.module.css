@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+ul li a:hover {
+    color: var(--lightblue);
+}
