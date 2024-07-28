@@ -1,0 +1,104 @@
+.topbanner {
+    background-color: #5a57ff;
+    padding: 1rem 0rem;
+
+}
+
+.topbanner p {
+    text-align: center;
+    color: white;
+    font-weight: 550;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+}
+
+
+
+nav .logo img {
+    width: 12rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em
+}
+
+nav ul li a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+nav ul li .navbtns {
+    padding: 0.75rem 1.2rem;
+
+    font-weight: 600;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+nav ul li .loginbtn {
+    color: var(--primary-text-color);
+    background-color: white;
+    border: 1px solid var(--primary-text-color);
+}
+
+nav ul li .signupbtn {
+    color: white;
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+nav ul li .signupbtn:hover {
+    color: white;
+    border: 1px solid var(--accent-color-dark);
+    background-color: var(--accent-color-dark);
+}
+
+.fabar {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.fabar:hover {
+    color: var(--accent-color);
+}
+
+nav ul li a:hover {
+    color: var(--accent-color-dark);
+}
+
+
+
+/* Styles for small devices */
+@media (max-width: 576px) {}
+
+
+/* Styles for medium devices */
+@media (min-width: 577px) and (max-width: 768px) {}
+
+/* Styles for large devices */
+@media (max-width: 1023px) {
+
+
+    nav ul {
+        display: none;
+    }
+
+    .fabar {
+        display: block;
+    }
+}
