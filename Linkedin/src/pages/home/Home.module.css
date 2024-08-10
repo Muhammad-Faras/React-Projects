@@ -1,0 +1,51 @@
+.parentSection {
+    margin: 2% 8%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.parentSection .profileSection {
+    width: 20%;
+    height: 400px;
+    background-color: rgb(128, 127, 212);
+    border: 1px solid rgb(10, 24, 231);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border-top-left-radius: 0.5rem;
+
+
+}
+
+.profileSection .pheaderimg {
+    background-color: #A0B4B7;
+    height: 6rem;
+    width: 100%;
+
+}
+
+.parentSection .contentSection {
+    width: 50%;
+    height: 400px;
+    background-color: rgb(211, 151, 111);
+    border: 1px solid rgb(255, 136, 0);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+
+}
+
+.parentSection .suggestionSection {
+    background-color: rgb(88, 81, 81);
+    width: 30%;
+    height: 400px;
+    border: 1px solid rgb(3, 3, 3);
+    border-top-left-radius: 0.5rem;
+
+
+
+}

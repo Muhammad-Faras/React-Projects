@@ -1,0 +1,113 @@
+header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    height: 70px;
+}
+
+.firstdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.logoicon {
+    color: var(--logoColor);
+    font-size: var(--iconFontSize);
+}
+
+
+
+.firstdiv .searchDiv {
+    position: relative;
+    text-align: center;
+}
+
+.inputIcon {
+    color: var(--navIconHoverColor);
+}
+
+.searchDiv>.inputIcon {
+    color: var(--navIconColor);
+    position: absolute;
+    left: 0.2rem;
+    top: 0.2rem;
+    background-color: var(--secondryBgColor);
+    padding: 0.4rem 0.7rem;
+    border-top-left-radius: 0.2rem;
+    text-align: center;
+}
+
+.firstdiv input {
+    color: var(--navIconHoverColor);
+    width: 18rem;
+    background-color: var(--secondryBgColor);
+    padding: 0.5rem 0.2rem 0.5rem 2.6rem;
+    border: none;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style-type: none;
+
+}
+
+ul li .naviconLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.4rem;
+}
+
+.naviconLink {
+    color: var(--navIconColor);
+}
+
+.naviconLink:hover {
+    color: var(--navIconHoverColor);
+
+}
+
+.naviconLink span {
+    font-size: 0.8rem;
+}
+
+.navicon {
+    font-size: 1.4rem;
+
+}
+
+.searchIcon {
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Styles for small devices */
+@media (max-width: 900px) {
+
+    .searchDiv input,
+    .inputIcon {
+        display: none;
+    }
+
+    .searchIcon {
+        display: block;
+    }
+
+}
