@@ -3,7 +3,7 @@ import Index from '../../components/layout/Index';
 import styles from './Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePiedPiper } from '@fortawesome/free-brands-svg-icons';
-import { faBookmark, faImage, faBriefcase, faNewspaper, faCaretDown, faEllipsis, faXmark, faRetweet, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faBookmark, faImage, faBriefcase, faNewspaper, faCaretDown, faEllipsis, faXmark, faRetweet, faPaperPlane, faCircleInfo, faPlus, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp, faCommentDots, } from '@fortawesome/free-regular-svg-icons';
 
 const Home = () => {
@@ -42,9 +42,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className={`${styles.recentinfo}`}>
-                            aaaaaaaaaaasdasdasdasdasda <br />
-                            asdasd
-                            asd
+
                         </div>
                     </div>
 
@@ -145,7 +143,51 @@ const Home = () => {
                 {/* -------------------------- */}
                 {/* suggestionSection starts here */}
                 {/* -------------------------- */}
-                <div className={`${styles.suggestionSection}`}></div>
+                <div className={`${styles.suggestionSection}`}>
+                    <div className={`${styles.suggestionCard}`}>
+                        <div className={`${styles.suggestionTitle}`}>
+                            <p>Add to your feed</p>
+                            <FontAwesomeIcon icon={faCircleInfo} style={{ fontSize: '1.3rem' }} />
+                        </div>
+                        <a href='#' className={`${styles.userSuggestion}`}>
+                            <img src="./images/user.jpeg" alt="post user profile img" />
+                            <div className={`${styles.userInfo}`}>
+                                <p>Muahammad Faras</p>
+                                <p>27M+ reach | Chairman Cordoba LV | Director NETSOL Technologies | Co-</p>
+                                <button>
+                                    <FontAwesomeIcon icon={faPlus} style={{ fontSize: '1.3rem' }} />
+                                    Follow
+                                </button>
+                            </div>
+                        </a>
+                        <a href='#' className={`${styles.userSuggestion}`}>
+                            <img src="./images/user.jpeg" alt="post user profile img" />
+                            <div className={`${styles.userInfo}`}>
+                                <p>Muahammad Faras</p>
+                                <p>27M+ reach | Chairman Cordoba LV | Director NETSOL Technologies | Co-</p>
+                                <button>
+                                    <FontAwesomeIcon icon={faPlus} style={{ fontSize: '1.3rem' }} />
+                                    Follow
+                                </button>
+                            </div>
+                        </a>
+                        <a href='#' className={`${styles.userSuggestion}`}>
+                            <img src="./images/user.jpeg" alt="post user profile img" />
+                            <div className={`${styles.userInfo}`}>
+                                <p>Muahammad Faras</p>
+                                <p>27M+ reach | Chairman Cordoba LV | Director NETSOL Technologies | Co-</p>
+                                <button>
+                                    <FontAwesomeIcon icon={faPlus} style={{ fontSize: '1.3rem' }} />
+                                    Follow
+                                </button>
+                            </div>
+                        </a>
+                        <div className={`${styles.allSuggestionRef}`}>
+                            <p>View all recommendations </p>
+                            <FontAwesomeIcon icon={faArrowRight} style={{ fontSize: '1.3rem' }} />
+                        </div>
+                    </div>
+                </div>
             </div>
         </Index >
     );
