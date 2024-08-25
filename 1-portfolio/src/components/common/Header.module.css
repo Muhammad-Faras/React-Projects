@@ -1,0 +1,64 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bgColor);
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+
+.navmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.link {
+    font-weight: 550;
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--hoverColor);
+}
+
+header button {
+    outline: none;
+    border: none;
+    color: #7D8792;
+    background-color: #2D2E2E;
+    font-size: 17px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header button {
+        display: block;
+    }
+
+    .navmenu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 10px 0;
+        display: none;
+
+    }
+
+    .navmenu.active {
+        display: flex;
+
+    }
+
+
+}

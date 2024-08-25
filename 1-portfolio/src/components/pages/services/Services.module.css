@@ -1,0 +1,44 @@
+.servicesSection {
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+.servicesSection h1 {
+    color: var(--hoverColor);
+    margin: 2rem 0rem;
+}
+
+.servicesContainer {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.servicesContainer .card {
+    background-color: var(--cardbgColor);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--primaryColor);
+}
+
+.card i {
+    color: var(--hoverColor);
+}
+
+.card h3 {
+    color: white;
+    font-weight: 600;
+}

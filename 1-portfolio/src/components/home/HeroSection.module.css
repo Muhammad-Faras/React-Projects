@@ -1,0 +1,66 @@
+.heroSection {
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.96;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    gap: 1rem;
+}
+
+.heroContainer h3 {
+    color: white;
+}
+
+.heroContainer h1 {
+    font-size: 3em;
+    color: var(--hoverColor);
+}
+
+.heroContainer p {
+    color: var(--primaryColor);
+    font-size: 1em;
+    text-align: center;
+    text-align-last: center;
+    margin: 0.5rem 0rem;
+}
+
+.downloadBtn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--bgColor);
+    padding: 1rem;
+    border: 1px solid var(--hoverColor);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.downloadBtn:hover {
+    background-color: var(--hoverColor);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .heroContainer {
+        width: 100%;
+    }
+
+    .heroContainer h1 {
+        font-size: 2.5em;
+    }
+
+}

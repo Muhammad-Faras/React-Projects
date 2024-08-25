@@ -1,0 +1,64 @@
+.aboutSection {
+    background-color: var(--bgColor);
+}
+
+.aboutContainer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.aboutContainer .right {
+    color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.right h1 {
+    font-size: 2rem;
+    color: var(--hoverColor);
+}
+
+.right p {
+    font-size: 0.9em;
+}
+
+.right .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.right .downloadBtn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--bgColor);
+    padding: 0.6rem 1.3rem;
+    border: 1px solid var(--hoverColor);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.right .downloadBtn:first-child {
+    background-color: var(--hoverColor);
+
+}
+
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+    }
+
+}
